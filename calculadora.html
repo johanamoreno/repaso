@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="calculadora.js"></script>
+  <title>Index</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Repaso</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Index</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paises.html">Paises</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="calculadora.html">Calculadora</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="todo.html">Todo</a>
+          </li>
+    
+        </ul>
+    </div>
+</nav> 
+<br>
+<br>
+<div class="container">
+<label style="color: #226666">Calculadora</label>
+   <input id="numero1" type="text">
+   <input id="numero2" type="text">
+   <button style=" background-color: grey" type="button" onclick="getValorSuma()">+</button>
+   <button style=" background-color: grey" type="button" onclick="getValorResta()">-</button>
+   <button style=" background-color: grey" type="button" onclick="getValorMulti()">*</button>
+   <button style=" background-color: grey" type="button" onclick="getValorDivi()">/</button>
+   <br>
+   <br>
+   <p style="color: #226666">El valor de la suma es:</p> <p id="suma" >0</p>
+   <p style="color: #226666">El valor de la resta es:</p> <p id="resta">0</p>
+   <p style="color: #226666">El valor de la multiplicacion es:</p> <p id="multi">0</p>
+   <p style="color: #226666">El valor de la division es:</p> <p id="divi">0</p>
+</div>
+</body>
+
+</html>
